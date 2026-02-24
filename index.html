@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bring Alpha School to Lansing | 2-Hour Learning</title>
+  <meta name="description" content="Help bring Alpha School and 2-Hour Learning to the greater Lansing area. Students learn 2x as much in half the time. Join our community of families today.">
+  <meta property="og:title" content="Bring Alpha School to Lansing">
+  <meta property="og:description" content="Alpha students score in the top 1% nationally while spending less than 2 hours on academics. Help bring this to Lansing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lansingalpha.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">A</span>
+        <span class="nav__logo-text">Alpha Lansing</span>
+      </a>
+      <div class="nav__links">
+        <a href="#what-is-alpha">What is Alpha?</a>
+        <a href="#results">Results</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#signup" class="nav__cta">Join the Movement</a>
+      </div>
+      <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">Greater Lansing, MI</div>
+        <h1 class="hero__title">Help Bring<br><span class="hero__highlight">Alpha School</span><br>to Lansing</h1>
+        <p class="hero__subtitle">Alpha students learn <strong>twice as much in half the time</strong> &mdash; and they love school again. We're building a community of families to bring this to the greater Lansing area.</p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">99th</span>
+            <span class="hero__stat-label">Percentile<br>Test Scores</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">2x</span>
+            <span class="hero__stat-label">Learning<br>Rate</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">90%+</span>
+            <span class="hero__stat-label">Say They<br>Love School</span>
+          </div>
+        </div>
+        <a href="#signup" class="hero__cta-btn">Express Your Interest</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progress Tracker -->
+  <section class="progress">
+    <div class="progress__container">
+      <h2 class="progress__title">Our Path to Opening</h2>
+      <div class="progress__track">
+        <div class="progress__step progress__step--active">
+          <div class="progress__icon">1</div>
+          <div class="progress__label">Building Community</div>
+          <div class="progress__desc">Gathering interested families</div>
+        </div>
+        <div class="progress__line"></div>
+        <div class="progress__step">
+          <div class="progress__icon">2</div>
+          <div class="progress__label">20 Families Committed</div>
+          <div class="progress__desc">Demonstrating local demand</div>
+        </div>
+        <div class="progress__line"></div>
+        <div class="progress__step">
+          <div class="progress__icon">3</div>
+          <div class="progress__label">Alpha Partnership</div>
+          <div class="progress__desc">Official school approval</div>
+        </div>
+        <div class="progress__line"></div>
+        <div class="progress__step">
+          <div class="progress__icon">4</div>
+          <div class="progress__label">Doors Open</div>
+          <div class="progress__desc">First day of school</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interest Form -->
+  <section class="signup" id="signup">
+    <div class="signup__container">
+      <div class="signup__header">
+        <h2 class="signup__title">Express Your Interest</h2>
+        <p class="signup__subtitle">Join the growing community of Lansing-area families who want a better way to educate their children. No commitment required &mdash; just let us know you're interested.</p>
+      </div>
+      <form class="signup__form" id="interest-form">
+        <div class="signup__row">
+          <div class="signup__field">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="signup__field">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <div class="signup__row">
+          <div class="signup__field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="signup__field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="signup__row">
+          <div class="signup__field">
+            <label for="zipCode">Zip Code *</label>
+            <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 48823">
+          </div>
+          <div class="signup__field">
+            <label for="city">City / Township</label>
+            <select id="city" name="city">
+              <option value="">Select your area</option>
+              <option value="Haslett">Haslett</option>
+              <option value="Okemos">Okemos</option>
+              <option value="East Lansing">East Lansing</option>
+              <option value="Williamston">Williamston</option>
+              <option value="Bath">Bath</option>
+              <option value="Lansing">Lansing</option>
+              <option value="DeWitt">DeWitt</option>
+              <option value="Mason">Mason</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="signup__children" id="children-section">
+          <h3 class="signup__children-title">Your Children</h3>
+          <div id="children-list">
+            <div class="signup__child" data-child="1">
+              <div class="signup__child-header">
+                <span>Child 1</span>
+              </div>
+              <div class="signup__child-fields">
+                <div class="signup__field">
+                  <label>Grade (Fall 2026)</label>
+                  <select name="child1_grade">
+                    <option value="">Select grade</option>
+                    <option value="K">Kindergarten</option>
+                    <option value="1">1st Grade</option>
+                    <option value="2">2nd Grade</option>
+                    <option value="3">3rd Grade</option>
+                    <option value="4">4th Grade</option>
+                    <option value="5">5th Grade</option>
+                    <option value="6">6th Grade</option>
+                    <option value="7">7th Grade</option>
+                    <option value="8">8th Grade</option>
+                  </select>
+                </div>
+                <div class="signup__field">
+                  <label>Current School Type</label>
+                  <div class="signup__radio-group">
+                    <label class="signup__radio"><input type="radio" name="child1_school" value="Public"> Public</label>
+                    <label class="signup__radio"><input type="radio" name="child1_school" value="Private"> Private</label>
+                    <label class="signup__radio"><input type="radio" name="child1_school" value="Homeschool"> Homeschool</label>
+                    <label class="signup__radio"><input type="radio" name="child1_school" value="Other"> Other</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="signup__add-child" id="add-child-btn">+ Add Another Child</button>
+        </div>
+
+        <div class="signup__field">
+          <label for="howHeard">How did you hear about this effort?</label>
+          <select id="howHeard" name="howHeard">
+            <option value="">Select one</option>
+            <option value="Facebook Group">Facebook Group</option>
+            <option value="Friend/Family">Friend or Family</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Alpha School Website">Alpha School Website</option>
+            <option value="News/Article">News or Article</option>
+            <option value="Podcast">Podcast</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="signup__submit" id="submit-btn">
+          <span class="signup__submit-text">Express My Interest</span>
+          <span class="signup__submit-loading" style="display:none;">Submitting...</span>
+        </button>
+        <p class="signup__disclaimer">By submitting, you'll also be invited to join our <a href="https://www.facebook.com/groups/2295147097590993/" target="_blank" rel="noopener">Facebook community</a> for updates and discussion.</p>
+      </form>
+      <div class="signup__success" id="form-success" style="display:none;">
+        <div class="signup__success-icon">&#10003;</div>
+        <h3>You're In!</h3>
+        <p>Thank you for expressing your interest. We'll keep you updated on our progress.</p>
+        <a href="https://www.facebook.com/groups/2295147097590993/" target="_blank" rel="noopener" class="signup__fb-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Join Our Facebook Group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Alpha -->
+  <section class="what-is" id="what-is-alpha">
+    <div class="what-is__container">
+      <div class="what-is__header">
+        <h2 class="section-title">What is Alpha School?</h2>
+        <p class="section-subtitle">Alpha School uses the <strong>2-Hour Learning</strong> model: AI-powered adaptive learning that lets students complete their core academics in about 2 hours per day. The rest of the day is spent on workshops, physical activity, social skills, and real-world projects.</p>
+      </div>
+      <div class="what-is__grid">
+        <div class="what-is__card">
+          <div class="what-is__card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>AI-Powered Academics</h3>
+          <p>Personalized, adaptive learning powered by AI meets each student exactly where they are. No more one-size-fits-all instruction.</p>
+        </div>
+        <div class="what-is__card">
+          <div class="what-is__card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>2 Hours of Academics</h3>
+          <p>Students complete their core academics in about 2 hours per day with better outcomes than traditional 6-hour instruction.</p>
+        </div>
+        <div class="what-is__card">
+          <div class="what-is__card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Real-World Skills</h3>
+          <p>The rest of the day focuses on workshops, athletics, social skills, entrepreneurship, and hands-on projects that prepare kids for life.</p>
+        </div>
+        <div class="what-is__card">
+          <div class="what-is__card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Kids Love It</h3>
+          <p>Over 90% of Alpha students say they love school. No more Sunday night dread or morning battles to get out the door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section" id="video">
+    <div class="video-section__container">
+      <h2 class="section-title">See 2-Hour Learning in Action</h2>
+      <p class="section-subtitle">Watch how Alpha School is redefining K-12 education.</p>
+      <div class="video-section__embed">
+        <iframe src="https://www.youtube.com/embed/bMOGbRfFEHo" title="Alpha School - 2-Hour Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results" id="results">
+    <div class="results__container">
+      <div class="results__header">
+        <h2 class="section-title">Proven Results</h2>
+        <p class="section-subtitle">Alpha students using the 2-Hour Learning model consistently outperform their peers nationwide. These are real, verified results from the 2024&ndash;2025 school year.</p>
+      </div>
+      <div class="results__grid">
+        <div class="results__card results__card--highlight">
+          <div class="results__card-number">99th</div>
+          <div class="results__card-label">Percentile</div>
+          <div class="results__card-desc">On NWEA MAP assessments across Math, Reading, Language, and Science for grades K-8</div>
+        </div>
+        <div class="results__card">
+          <div class="results__card-number">2.2x</div>
+          <div class="results__card-label">Learning Rate</div>
+          <div class="results__card-desc">Alpha students learn at 2.2x the rate of their peers. Top students achieve 3.9x.</div>
+        </div>
+        <div class="results__card">
+          <div class="results__card-number">1470+</div>
+          <div class="results__card-label">Average SAT</div>
+          <div class="results__card-desc">Alpha high schoolers average 1470+ on the SAT, well above the national average of 1060.</div>
+        </div>
+        <div class="results__card">
+          <div class="results__card-number">&lt;2hrs</div>
+          <div class="results__card-label">Daily Academics</div>
+          <div class="results__card-desc">All of this achieved in less than 2 hours of academic instruction per day.</div>
+        </div>
+      </div>
+      <div class="results__note">
+        <p>Results verified by NWEA MAP Growth assessments, the most widely used measure of K-12 academic achievement in the United States. Data from the 2024-2025 school year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works / Daily Schedule -->
+  <section class="schedule" id="how-it-works">
+    <div class="schedule__container">
+      <h2 class="section-title">A Day at Alpha School</h2>
+      <p class="section-subtitle">The 2-Hour Learning model frees up time for what matters most: developing well-rounded, confident, capable young people.</p>
+      <div class="schedule__timeline">
+        <div class="schedule__item">
+          <div class="schedule__time">8:00 - 8:15</div>
+          <div class="schedule__content">
+            <h3>Morning Kickoff</h3>
+            <p>Students arrive and get settled. Community check-in and day overview.</p>
+          </div>
+        </div>
+        <div class="schedule__item schedule__item--academic">
+          <div class="schedule__time">8:15 - 10:15</div>
+          <div class="schedule__content">
+            <h3>2-Hour Learning Block</h3>
+            <p>AI-powered adaptive academics. Each student works at their own pace on personalized lessons in math, reading, language, and science.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">10:15 - 10:45</div>
+          <div class="schedule__content">
+            <h3>Snack & Recess</h3>
+            <p>Free play and socialization time.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">10:45 - 12:00</div>
+          <div class="schedule__content">
+            <h3>Workshop Block 1</h3>
+            <p>Rotating workshops: public speaking, entrepreneurship, financial literacy, coding, art, music, and more.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">12:00 - 12:45</div>
+          <div class="schedule__content">
+            <h3>Lunch</h3>
+            <p>Community lunch and social time.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">12:45 - 1:45</div>
+          <div class="schedule__content">
+            <h3>Athletics & Movement</h3>
+            <p>Physical education, sports, outdoor activities, and movement-based learning.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">1:45 - 3:00</div>
+          <div class="schedule__content">
+            <h3>Workshop Block 2</h3>
+            <p>Project-based learning, team challenges, guest speakers, and real-world skill building.</p>
+          </div>
+        </div>
+        <div class="schedule__item">
+          <div class="schedule__time">3:00</div>
+          <div class="schedule__content">
+            <h3>Dismissal</h3>
+            <p>No homework. Students leave with their academics complete and time for family, hobbies, and being kids.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lansing Specific -->
+  <section class="lansing" id="lansing">
+    <div class="lansing__container">
+      <div class="lansing__content">
+        <h2 class="section-title">Why Lansing?</h2>
+        <p>The greater Lansing area is home to thousands of families who want more for their children's education. Communities like <strong>Haslett, Okemos, East Lansing, Williamston, and Bath</strong> are filled with parents who value both academic excellence and raising well-rounded kids.</p>
+        <p>We believe Lansing is the perfect place for Michigan's first Alpha School. But we need to show there's demand. That's where you come in.</p>
+        <div class="lansing__goal">
+          <div class="lansing__goal-number" id="family-counter">20</div>
+          <div class="lansing__goal-text">
+            <strong>families committed</strong> is our first milestone to demonstrate demand and begin the process of partnering with Alpha School to bring 2-Hour Learning to our community.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="faq__container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            What grades will Alpha School Lansing serve?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>We are targeting grades K through 8. Alpha School's 2-Hour Learning model is designed for and proven across all elementary and middle school grade levels.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Is this a public school, private school, or charter school?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>Alpha Schools typically operate as private microschools. The exact structure for Lansing will depend on local regulations and community needs, but the focus is on providing an affordable, high-quality option for families.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            How much will tuition cost?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>Tuition details will be finalized as we progress. Alpha School aims to be accessible and competitively priced compared to other private school options. Expressing interest now does not commit you financially.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Does the 2-Hour Learning model really work?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Alpha students score in the 99th percentile on NWEA MAP assessments and learn at 2.2x the rate of their peers. The model has been independently validated and works across diverse student populations, including students from lower-income backgrounds who learn at 2.1x the national rate.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            What happens during the non-academic hours?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>Students spend the rest of the day in workshops covering real-world skills like public speaking, entrepreneurship, financial literacy, coding, and creative arts. They also have dedicated time for athletics, physical activity, and social development.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Is there homework?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>No. Because the AI-powered learning is so efficient, students complete all their academics during the school day. Evenings are free for family time, hobbies, sports, and being kids.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            When would the school open?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>Our target is to open as soon as we can demonstrate sufficient demand and secure the Alpha School partnership. The timeline depends on how quickly we reach our family commitment milestones. Join the Facebook group for the most current updates.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Does expressing interest commit me to anything?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>No. Expressing interest simply lets us know you'd consider Alpha School for your family. It helps us demonstrate demand to Alpha School leadership. There is zero financial or enrollment commitment at this stage.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Where would the school be located?
+            <span class="faq__arrow">&#9662;</span>
+          </button>
+          <div class="faq__answer">
+            <p>The exact location will be determined based on where the most interested families are concentrated. We're focused on the greater Lansing area including Haslett, Okemos, East Lansing, Williamston, and Bath.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta">
+    <div class="bottom-cta__container">
+      <h2>Ready to Transform Education in Lansing?</h2>
+      <p>Join the community of families working to bring Alpha School and 2-Hour Learning to the greater Lansing area.</p>
+      <div class="bottom-cta__buttons">
+        <a href="#signup" class="bottom-cta__btn bottom-cta__btn--primary">Express Your Interest</a>
+        <a href="https://www.facebook.com/groups/2295147097590993/" target="_blank" rel="noopener" class="bottom-cta__btn bottom-cta__btn--secondary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Join Our Facebook Group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="nav__logo-icon">A</span>
+          <span class="nav__logo-text">Alpha Lansing</span>
+        </div>
+        <p class="footer__desc">A community-driven effort to bring Alpha School and the 2-Hour Learning model to the greater Lansing, Michigan area.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#what-is-alpha">What is Alpha?</a>
+        <a href="#results">Results</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.facebook.com/groups/2295147097590993/" target="_blank" rel="noopener">Facebook Group</a>
+        <a href="https://www.alphaschool.com" target="_blank" rel="noopener">Alpha School</a>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Alpha Lansing. This is a community initiative and is not officially affiliated with Alpha School Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
