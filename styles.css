@@ -1348,11 +1348,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
-  :root {
-    --section-padding: 70px 0;
-  }
-
+@media (max-width: 900px) {
   .nav__links {
     display: none;
     position: fixed;
@@ -1365,6 +1361,7 @@ a {
     padding: 32px 24px;
     gap: 0;
     z-index: 999;
+    overflow-y: auto;
   }
 
   .nav__links.nav__links--open {
@@ -1380,6 +1377,8 @@ a {
   .nav__cta {
     margin-top: 16px;
     text-align: center;
+    display: block;
+    border-bottom: none !important;
   }
 
   .nav__mobile-toggle {
@@ -1394,6 +1393,12 @@ a {
   }
   .nav__mobile-toggle--open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 70px 0;
   }
 
   .hero {
