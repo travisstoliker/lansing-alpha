@@ -312,90 +312,6 @@ a {
 }
 
 /* ========================================
-   Progress Tracker
-   ======================================== */
-.progress {
-  padding: 60px 24px;
-  background: var(--off-white);
-}
-
-.progress__container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.progress__title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--gray-500);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 32px;
-}
-
-.progress__track {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0;
-}
-
-.progress__step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex: 0 0 180px;
-  opacity: 0.4;
-}
-
-.progress__step--active {
-  opacity: 1;
-}
-
-.progress__icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--gray-300);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-}
-
-.progress__step--active .progress__icon {
-  background: var(--blue);
-  box-shadow: 0 4px 15px rgba(0, 0, 239, 0.3);
-}
-
-.progress__label {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
-
-.progress__desc {
-  font-size: 0.75rem;
-  color: var(--gray-500);
-}
-
-.progress__line {
-  flex: 0 0 60px;
-  height: 2px;
-  background: var(--gray-300);
-  margin-top: 24px;
-}
-
-/* ========================================
    Signup Form
    ======================================== */
 .signup {
@@ -1510,23 +1426,6 @@ a {
 
   .section-title {
     font-size: 2rem;
-  }
-
-  .progress__track {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .progress__step {
-    flex: none;
-  }
-
-  .progress__line {
-    width: 2px;
-    height: 30px;
-    flex: none;
-    margin: 0;
   }
 
   .signup__form {
