@@ -385,11 +385,21 @@
         <h2 class="section-title">Why Lansing?</h2>
         <p>The greater Lansing area is home to thousands of families who want more for their children's education. Communities like <strong>Haslett, Okemos, East Lansing, Williamston, and Bath</strong> are filled with parents who value both academic excellence and raising well-rounded kids.</p>
         <p>We believe Lansing is the perfect place for Michigan's first Alpha School. But we need to show there's demand. That's where you come in.</p>
-        <div class="lansing__goal">
-          <div class="lansing__goal-number" id="family-counter">20</div>
-          <div class="lansing__goal-text">
-            <strong>families committed</strong> is our first milestone to demonstrate demand and begin the process of partnering with Alpha School to bring 2-Hour Learning to our community.
+        <div class="lansing__tracker">
+          <div class="tracker__header">
+            <span class="tracker__count"><span class="tracker__count-number" id="family-counter">3</span> of 20 families</span>
+            <span class="tracker__label">committed to Lansing Alpha</span>
           </div>
+          <div class="tracker__bar">
+            <div class="tracker__bar-fill" id="tracker-fill"></div>
+            <div class="tracker__bar-milestone" style="left: 100%;">
+              <span class="tracker__bar-milestone-label">Goal: 20</span>
+            </div>
+          </div>
+          <div class="tracker__families" id="tracker-families">
+            <!-- 20 family icons rendered by JS -->
+          </div>
+          <p class="tracker__cta">Each family that signs up brings us closer to partnering with Alpha School. <strong>Be one of the first.</strong></p>
         </div>
       </div>
     </div>
@@ -519,7 +529,8 @@
         <a href="https://www.alphaschool.com" target="_blank" rel="noopener">Alpha School</a>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2025 Alpha Lansing. This is a community initiative and is not officially affiliated with Alpha School Inc.</p>
+        <p>&copy; 2026 Alpha Lansing. This is an independent community initiative and is not affiliated with, endorsed by, or sponsored by Alpha School Inc.</p>
+        <p class="footer__trademark">Alpha School, 2-Hour Learning, and related marks are trademarks of Alpha School Inc. All trademarks are the property of their respective owners and are used here solely to express community interest in bringing their educational model to the Lansing, Michigan area.</p>
       </div>
     </div>
   </footer>

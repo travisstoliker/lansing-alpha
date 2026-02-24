@@ -199,6 +199,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ---- Family Progress Tracker ----
+  const committedFamilies = 3;
+  const goalFamilies = 20;
+  const trackerFamilies = document.getElementById('tracker-families');
+  const trackerFill = document.getElementById('tracker-fill');
+
+  if (trackerFamilies) {
+    // Render 20 family icons
+    for (let i = 1; i <= goalFamilies; i++) {
+      const icon = document.createElement('div');
+      icon.className = 'tracker__family';
+      icon.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+      icon.setAttribute('data-index', i);
+      trackerFamilies.appendChild(icon);
+    }
+
+    // Animate on scroll
+    const trackerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Animate the progress bar
+          const pct = (committedFamilies / goalFamilies) * 100;
+          trackerFill.style.width = pct + '%';
+
+          // Light up committed families one by one
+          const icons = trackerFamilies.querySelectorAll('.tracker__family');
+          icons.forEach((icon, i) => {
+            if (i < committedFamilies) {
+              setTimeout(() => {
+                icon.classList.add('tracker__family--active');
+              }, 300 + i * 200);
+            }
+          });
+
+          trackerObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    trackerObserver.observe(trackerFamilies);
+  }
+
   // ---- Animate elements on scroll ----
   const observerOptions = {
     threshold: 0.1,
