@@ -558,6 +558,8 @@ a {
   width: auto;
   margin: 0;
   accent-color: var(--blue);
+  -webkit-appearance: auto;
+  appearance: auto;
 }
 
 .signup__add-child {
