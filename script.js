@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Form Submission ----
   // Using Google Apps Script as the backend (same pattern as alphasouthbayla.org)
   // REPLACE THIS URL with your actual Google Apps Script web app URL
-  const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwprhvl0g54zg7xm962q9y6y2lxel9FjOAAU67kblPKSatrscLCKPKZDz2X9rTZ0sO53w/exec';
 
   const form = document.getElementById('interest-form');
   const submitBtn = document.getElementById('submit-btn');
