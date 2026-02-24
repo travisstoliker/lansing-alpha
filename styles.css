@@ -1099,6 +1099,129 @@ a {
 }
 
 /* ========================================
+   Community Meetings
+   ======================================== */
+.meetings {
+  padding: var(--section-padding);
+  padding-left: 24px;
+  padding-right: 24px;
+  background: var(--navy);
+}
+
+.meetings__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.meetings .section-title,
+.meetings .section-subtitle {
+  color: var(--white);
+}
+
+.meetings .section-subtitle {
+  opacity: 0.8;
+}
+
+.meetings__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.meetings__card {
+  display: flex;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.meetings__card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.meetings__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 28px;
+  background: var(--blue);
+  min-width: 100px;
+}
+
+.meetings__month {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.meetings__day {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.meetings__info {
+  padding: 24px 28px;
+  flex: 1;
+}
+
+.meetings__info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.meetings__meta {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.meetings__desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.meetings__register {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.meetings__register:hover {
+  background: var(--off-white);
+  transform: translateY(-1px);
+}
+
+.meetings__note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 32px;
+}
+
+/* ========================================
    FAQ
    ======================================== */
 .faq {
@@ -1479,6 +1602,25 @@ a {
   .tracker__family svg {
     width: 16px;
     height: 16px;
+  }
+
+  .meetings__card {
+    flex-direction: column;
+  }
+
+  .meetings__date {
+    flex-direction: row;
+    gap: 8px;
+    padding: 14px 20px;
+    min-width: auto;
+  }
+
+  .meetings__day {
+    font-size: 1.8rem;
+  }
+
+  .meetings__info {
+    padding: 20px;
   }
 
   .bottom-cta h2 {

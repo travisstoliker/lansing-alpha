@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   // Observe cards and sections
-  document.querySelectorAll('.what-is__card, .results__card, .schedule__item, .faq__item').forEach(el => {
+  document.querySelectorAll('.what-is__card, .results__card, .schedule__item, .faq__item, .meetings__card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
