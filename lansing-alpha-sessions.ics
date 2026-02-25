@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lansing Alpha//Info Sessions//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20260312T173000
+DTEND:20260312T193000
+SUMMARY:Lansing Alpha - Community Info Session #1
+DESCRIPTION:Introduction to 2-Hour Learning, vision for Lansing, and open Q&A.\n\nRegistration: https://lu.ma/lansing-alpha-session1\nWebsite: https://lansingalpha.com
+LOCATION:Virtual (Google Meet - link TBD)
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260416T173000
+DTEND:20260416T193000
+SUMMARY:Lansing Alpha - Community Info Session #2
+DESCRIPTION:Deep dive into curriculum, daily schedule, and what makes Alpha different.\n\nRegistration: https://lu.ma/lansing-alpha-session2\nWebsite: https://lansingalpha.com
+LOCATION:Virtual (Google Meet - link TBD)
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260430T173000
+DTEND:20260430T193000
+SUMMARY:Lansing Alpha - Community Info Session #3
+DESCRIPTION:Next steps, partnership timeline, and how your family can get involved.\n\nRegistration: https://lu.ma/lansing-alpha-session3\nWebsite: https://lansingalpha.com
+LOCATION:Virtual (Google Meet - link TBD)
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
