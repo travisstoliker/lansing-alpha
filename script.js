@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="signup__field">
           <label>Current School Type</label>
           <div class="signup__radio-group">
-            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Public"> Public</label>
-            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Private"> Private</label>
-            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Homeschool"> Homeschool</label>
-            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Other"> Other</label>
+            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Public"><span class="signup__radio-dot"></span> Public</label>
+            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Private"><span class="signup__radio-dot"></span> Private</label>
+            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Homeschool"><span class="signup__radio-dot"></span> Homeschool</label>
+            <label class="signup__radio"><input type="radio" name="child${childCount}_school" value="Other"><span class="signup__radio-dot"></span> Other</label>
           </div>
         </div>
       </div>
