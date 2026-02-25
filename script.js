@@ -34,15 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = btn.parentElement;
       const isOpen = item.classList.contains('faq__item--open');
 
-      // Close all
+      // Close all and reset aria
       document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('faq__item--open'));
+      document.querySelectorAll('.faq__question').forEach(b => b.setAttribute('aria-expanded', 'false'));
 
       // Open clicked (if it wasn't already open)
       if (!isOpen) {
         item.classList.add('faq__item--open');
         btn.setAttribute('aria-expanded', 'true');
-      } else {
-        btn.setAttribute('aria-expanded', 'false');
       }
     });
   });
@@ -189,7 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Smooth scroll for anchor links ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const href = anchor.getAttribute('href');
+      if (href === '#') return; // skip bare hash (logo)
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         const offset = 80; // nav height

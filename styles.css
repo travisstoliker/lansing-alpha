@@ -1217,7 +1217,7 @@ a {
 }
 
 .faq__item--open .faq__answer {
-  max-height: 300px;
+  max-height: 500px;
   padding-bottom: 20px;
 }
 
